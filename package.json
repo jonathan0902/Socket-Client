@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack -d"
+    "start": "webpack -d",
+    "deploy": "webpack -d && rsync -av dist/* deploy@165.227.170.175:/var/www/socket-client.jhellberg.me/html/"
   },
   "keywords": [],
   "author": "",
